@@ -1,0 +1,108 @@
+:root {
+  --beige: #ede8d0;
+  --pink: #f2c9d1;
+  --pink-hover: #dd6c82;
+}
+
+@font-face {
+  font-family: "Harmattan";
+  src: url("./assets/Harmattan/Harmattan-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Harmattan";
+  src: url("./assets/Harmattan/Harmattan-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Harmattan";
+  src: url("./assets/Harmattan/Harmattan-Bold.ttf") format("truetype");
+  font-weight: bold; /* Bold weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Harmattan";
+  src: url("./assets/Harmattan/Harmattan-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* SemiBold weight */
+  font-style: normal;
+}
+
+*,
+p,
+h1 {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Harmattan", serif;
+}
+
+html {
+  direction: rtl;
+  background-color: var(--beige);
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: var(--pink);
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--pink-hover);
+  color: white;
+}
+
+input {
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 15px !important;
+  outline-color: var(--pink-hover);
+  color: var(--pink-hover);
+  width: 200px;
+}
+
+.d-none {
+  display: none;
+}
+
+header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.start-div {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Ensure the body takes the full height of the viewport */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.question-div {
+  text-align: center;
+}
+
+.question-body-div {
+  padding-top: 10px;
+}
